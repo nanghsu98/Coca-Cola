@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="photo/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="explore more.html">EXPLORE MORE</a></li>
+                    <li><a href="foundation.html">FOUNDATION</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>THE COCA-COLA FOUNDATION</h1>
+    </section>
+    <!-------Foundatiion------------>
+    <section class="foundation">
+        <div class="row">
+            <div class="foundation-left">
+                <img src="photo/foundation.jpg">
+                <h2>THE COCA-COLA FOUNDATION</h2>
+                <p>LThe Coca‑Cola Company's philanthropic arm, The Coca‑Cola Foundation, fosters lasting social impact
+                    through meaningful support for various causes and initiatives.</p>
+                <br>
+                <p>Our mission is to make a difference in communities around the world by investing in transformative
+                    ideas and institutions that help address some of our most pressing global challenges.</p>
+                <br>
+                <p>As the primary philanthropic arm of The Coca‑Cola Company, we are working to support the local and
+                    global changemakers leaving a measurable and lasting impact in areas around the world where the
+                    Company operates and where our employees live and work. </p>
+                <br>
+                <p>As of 2023, we have awarded more than $1.6 billion in grants to support initiatives around the world
+                    since our inception, and we have recently refreshed our focus to specifically address sustainable
+                    access to water, a circular economy, climate resilience and disaster preparedness and response,
+                    economic empowerment, and causes impacting our hometown community.</p>
+        
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your Comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+            </div>
+            <div class="foundation-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Philanthropic Funding</span>
+                    <span>19</span>
+                </div>
+                <div>
+                    <span>System Expertise</span>
+                    <span>98</span>
+                </div>
+                <div>
+                    <span>Collective Action</span>
+                    <span>25</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-------Footer------------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magnam saepe odit non nesciunt animi beatae,
+            officia repudiandae quam <br> ducimus magni dicta assumenda a voluptate numquam expedita voluptatem fugiat
+            fuga.
+        </p>
+        <div class="icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with<i class="fa-solid fa-heart"></i>Easy Tutorials</p>
+    </section>
+
+    <!-------JavaScript for Toggle Menu---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
